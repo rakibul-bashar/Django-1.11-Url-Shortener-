@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>URL SHORTENER | {% block title%}Shorten that url
+{% endblock title%}</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link  href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet" />
+{%block styles%}
+<style>
+body{
+     background-color: #880b0b;
+}
+
+.btn-link, .btn-link.active, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
+    background-color: #07520a;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+.h1, h1{
+    font-size: 50px;
+    color: #128af1;
+}
+.lead {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 300;
+    color: #2f0606;
+    line-height: 1.4;
+}
+</style>
+{%endblock styles%}
+</head>
+<body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+
+
+          <div class="inner cover">
+              {% block content %}
+              {% endblock content %}
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
